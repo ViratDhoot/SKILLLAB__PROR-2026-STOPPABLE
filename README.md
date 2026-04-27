@@ -602,10 +602,13 @@ The biggest question mark left is whether the servo motor can actually behave it
 
 ## 15.3 Playtesting Notes
 
-| Tester      | What They Did                        | What Confused Them                    | What They Enjoyed                         | What You Will Change                          |
-| ----------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- | --------------------------------------------- |
-|  Gopal  |  Tried navigating through obstacles  |  Some obstacles ewren't clear enough  |  Liked projection + real car interaction  |  Add a slight red highlight around obstacles  |
 
+| Tester        | What They Did                                      | What Confused Them                                      | What They Enjoyed                                      | What You Will Change                                      |
+| ------------- | -------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| Saumitra         | Scanned RFID, followed LEDs, used touch sensors    | Initially unsure which LED corresponds to which medicine | Simple LED guidance and easy confirmation process       | Add labels or color coding for each medicine compartment   |
+| Anish         | Tested multiple scans and time-slot transitions    | Slight delay in understanding slot-based restrictions    | Overdose prevention logic and system reliability        | Add clearer feedback (buzzer/LED) when action is blocked   |
+| Nitisha       | Simulated missed dose scenario                     | Buzzer alert was not immediately intuitive               | Alert system ensuring dose is not missed                | Improve buzzer pattern or alert indicator       |
+| Virat         | Created group PPT       | Needed clearer visual mapping of system flow for audience | Clear logic and structured working of the system        | Add system flow diagram / labels for better presentation clarity |
 
 ---
 
