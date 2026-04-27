@@ -788,9 +788,6 @@ Minor finishing steps involved securing loose components, properly aligning sens
  
 ## 16.2 Build Photos
 
-- early sketch,
-<img width="960" height="1280" alt="" src="" />
-
 - Initial Build ,
 <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Basic%20Build.jpeg" />
 - Build testing,
