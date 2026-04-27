@@ -155,7 +155,8 @@ Example: your medicine box project could dispense pills correctly—but if an ol
 
 ## 5.2 Minimum Usable Version 
 
- The smallest version of this project that still delivers the core experience is a simple, single-user medicine reminder system that ensures the patient takes their medication on time and allows a caregiver to know whether it was taken. This can be achieved using a microcontroller Raspberry Pico Pi 2, a buzzer or LED for alerts, and a single push button for user confirmation. At the scheduled time, the device gives an audible or visual alert prompting the user to take the medicine from a basic compartment. Once the medicine is taken, the user presses the button to confirm, and this status is sent over Wi-Fi to a simple webpage or dashboard for the caregiver to monitor remotely. This minimal setup removes complex features like RFID, multiple users, or automated dispensing, yet still fulfills the essential goal of timely medication intake and remote awareness, which defines the core value of the system. 
+The smallest version of this project that still delivers the core experience is a simple, single-user medication guidance system that ensures the patient takes their medicine on time. The system can be built with a Raspberry Pi Pico and two LEDs for status display and one touch sensor for user verification. The system uses an LED light to notify users about their scheduled medication time. After the user takes their medicine, they press the touch sensor to confirm their action, which causes the system to record the event and reset for the upcoming cycle. This basic configuration maintains essential functions for confirming medication intake at scheduled times, but it eliminates features such as RFID and multiple user access and alert systems.
+
 
 ## 5.3 Stretch Features
 
