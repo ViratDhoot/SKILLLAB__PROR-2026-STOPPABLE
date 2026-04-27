@@ -74,7 +74,7 @@ Team STOPPABLE
 
 `(because Project-or)`
 
-<img width="1600" height="1131" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph" />
+<img width="1600" height="1131" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
 ## 1.4 One-Line Pitch
 
