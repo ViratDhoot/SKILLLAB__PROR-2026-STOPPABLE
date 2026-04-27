@@ -304,20 +304,26 @@ Include:
 - communication logic,
 - reset behavior.
 
-**Response:**  
-Startup behavior:
+
+**Startup behavior:**
 The system initializes LEDs, touch sensors, buzzers, and the RFID reader using the MFRC522 RFID Module. All outputs are turned OFF, timers are set, and the system becomes ready for operation.
-Input handling:
+
+**Input handling:**
 It reads RFID cards to identify patients and ignores repeated scans using a cooldown. Invalid cards are rejected.
-Sensor reading:
+
+**Sensor reading:**
 Touch sensors detect medicine confirmation, and internal timing (millis) determines the current time slot.
-Decision logic:
+
+**Decision logic:**
 The system checks patient ID and slot, prevents duplicate intake, and selects required medicines. It waits until all required touches are completed.
-Output behavior:
+
+**Output behavior:**
 LEDs indicate medicines, a red LED shows errors, and buzzers alert if a dose is missed.
-Communication logic:
+
+**Communication logic:**
 Serial output sends data like patient and slot, which can be extended using an ESP32 for web monitoring.
-Reset behavior:
+
+**Reset behavior:**
 LEDs and alerts reset automatically after use, and the system continuously runs for the next cycle.
 
 ## 10.3 Code Flowchart
