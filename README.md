@@ -16,11 +16,11 @@
 
 After forking this repository, rename it using the format:
 
-`SKILLLAB_PROR-2026-TeamName`
+ SKILLLAB_PROR-2026-TeamName 
 
 ### Example
 
-`SKILLLAB_PROR-2026-AuroWizards`
+ SKILLLAB_PROR-2026-AuroWizards 
 
 Do not keep the default repository name.
 
@@ -46,7 +46,7 @@ By the final review, this README should clearly show:
 
 - Fill every section.
 - Do not delete headings.
-- If something does not apply, write `Not applicable` and explain why.
+- If something does not apply, write  `Not applicable`  and explain why.
 - Add images, screenshots, sketches, links, and videos wherever useful.
 - Update task status and weekly logs regularly.
 - Use this file as evidence of process, not only as a final report.
@@ -63,16 +63,16 @@ Team STOPPABLE
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| Saumitra Bata | `[Hardware / Coding ]` | `[Documentation]`  | `Documentation, Gift of Gab `|
-| Anish Deodhar | `[Hardware / Fabrication]`   | `[Coding]`     | `Material Handling, Gift of Gab`    |
-| `Virat Dhoot` | `[Documentation/ Hardware  ]` | `[Coding]`  | `Documentation, Material Handling `|
-| `Nitisha Dung`  | `[Fabrication/Harware]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| Saumitra Bata |  [Hardware / Coding ]  |  [Documentation]   |  Documentation, Gift of Gab  |
+| Anish Deodhar |  [Hardware / Fabrication]    |  [Coding]      |  Material Handling, Gift of Gab     |
+|  Virat Dhoot  |  [Documentation/ Hardware  ]  |  [Coding]   |  Documentation, Material Handling  |
+|  Nitisha Dung   |  [Fabrication/Harware]    |  [Coding]      |  Material Handling, Hardware     |
 
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
 ## 1.3 Project Title
 
-`"Sync-Box"`
+ "Sync-Box" 
 
 <img width="813" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
 
@@ -86,13 +86,13 @@ Team STOPPABLE
 
 ## 1.4 One-Line Pitch
 
-`A Time synced automated medicine box with unique tags for individuals to take precise medication at right time catered to every individual.`
+ A Time synced automated medicine box with unique tags for individuals to take precise medication at right time catered to every individual. 
 
 ## 1.5 Expanded Project Idea
  
-`A time-synced automated medicine box with unique RFID tags ensures each person receives the correct medication at the right time. The system alerts the user when a dose is due, verifies their identity using an RFID tag, and then dispenses the medicine, reducing errors like missed or incorrect doses.
+ A time-synced automated medicine box with unique RFID tags ensures each person receives the correct medication at the right time. The system alerts the user when a dose is due, verifies their identity using an RFID tag, and then dispenses the medicine, reducing errors like missed or incorrect doses.
 It combines technologies like an Raspberry Pi Pico 2, RFID module, motors for dispensing, and sensors for verification.This creates a smart, reliable system that improves medication adherence and patient safety.
-`
+ 
 
 ---
 
@@ -123,13 +123,13 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Scientific Report]` | `https://www.ncbi.nlm.nih.gov/books/NBK225187/` | `Medication errors are a major cause of preventable deaths in healthcare systems.` |
-| `[Encyclopedia article]` | `https://en.wikipedia.org/wiki/Overmedication` | `Managing multiple medicines and dosage is one of the biggest challenges in elderly care.`  |
+|  [Scientific Report]  |  https://www.ncbi.nlm.nih.gov/books/NBK225187/  |  Medication errors are a major cause of preventable deaths in healthcare systems.  |
+|  [Encyclopedia article]  |  https://en.wikipedia.org/wiki/Overmedication  |  Managing multiple medicines and dosage is one of the biggest challenges in elderly care.   |
 |             |                                                                     |                                                                      |
 
 ## 3.2 Original Twist
 
-`It is a RFID-based personalized dispensing. Instead of just releasing pills at a fixed time, this system ensures the right person is taking the right medicine, which solves a real-world problem in multi-user environments. On top of that, features like dose verification (via sensors), alerts system turn it from a basic dispenser into a connected healthcare assistant that works according to individual needs.`
+ It is a RFID-based personalized dispensing. Instead of just releasing pills at a fixed time, this system ensures the right person is taking the right medicine, which solves a real-world problem in multi-user environments. On top of that, features like dose verification (via sensors), alerts system turn it from a basic dispenser into a connected healthcare assistant that works according to individual needs. 
 
 ---
 
@@ -137,9 +137,9 @@ List what inspired the project.
 
 ## 4.1 User Journey 
 
-`It’s 8:00 AM in an old-age home, and the **Sync Box** gently lights up and indicates it's medication time. Residents walk up one by one on their own. Mr. Sharma taps his RFID card, the system recognizes him instantly, and only his assigned compartment opens to dispense his specific pills. He takes the medicine and taps the confirm sensor, and the system logs his dose as “taken.” A few minutes later, another resident comes, taps their card, and receives a completely different set of medicines—all from the same shared device, without confusion or assistance.`
+ It’s 8:00 AM in an old-age home, and the **Sync Box** gently lights up and indicates it's medication time. Residents walk up one by one on their own. Mr. Sharma taps his RFID card, the system recognizes him instantly, and only his assigned compartment opens to dispense his specific pills. He takes the medicine and taps the confirm sensor, and the system logs his dose as “taken.” A few minutes later, another resident comes, taps their card, and receives a completely different set of medicines—all from the same shared device, without confusion or assistance. 
 
-`Meanwhile, the caregiver doesn’t need to be physically present. On a local web dashboard, they can see live updates: who has taken their medicine, who is late, and who hasn’t shown up yet. When one resident misses their dose, the system marks it and updates the dashboard in real time. The caregiver can quickly identify the issue remotely and decide whether to intervene. By the end of the day, the Sync Box provides a complete adherence report, making medication management efficient, independent for residents, and easy to monitor for caregivers.`
+ Meanwhile, the caregiver doesn’t need to be physically present. On a local web dashboard, they can see live updates: who has taken their medicine, who is late, and who hasn’t shown up yet. When one resident misses their dose, the system marks it and updates the dashboard in real time. The caregiver can quickly identify the issue remotely and decide whether to intervene. By the end of the day, the Sync Box provides a complete adherence report, making medication management efficient, independent for residents, and easy to monitor for caregivers. 
 
 ---
 
@@ -147,23 +147,23 @@ List what inspired the project.
 
 ## 5.1 Definition of “Usable”
 
-`A product is usable if it allows its intended users to achieve their goals easily, efficiently, and without confusion or error, in real-world conditions.`
+ A product is usable if it allows its intended users to achieve their goals easily, efficiently, and without confusion or error, in real-world conditions. 
 
-`A device can be functional but still not usable.
-Example: your medicine box project could dispense pills correctly—but if an old person can’t understand the interface, it’s useless in practice.`
+ A device can be functional but still not usable.
+Example: your medicine box project could dispense pills correctly—but if an old person can’t understand the interface, it’s useless in practice. 
 
 ## 5.2 Minimum Usable Version 
 
-`The smallest version of this project that still delivers the core experience is a simple, single-user medicine reminder system that ensures the patient takes their medication on time and allows a caregiver to know whether it was taken. This can be achieved using a microcontroller Raspberry Pico Pi 2, a buzzer or LED for alerts, and a single push button for user confirmation. At the scheduled time, the device gives an audible or visual alert prompting the user to take the medicine from a basic compartment. Once the medicine is taken, the user presses the button to confirm, and this status is sent over Wi-Fi to a simple webpage or dashboard for the caregiver to monitor remotely. This minimal setup removes complex features like RFID, multiple users, or automated dispensing, yet still fulfills the essential goal of timely medication intake and remote awareness, which defines the core value of the system.`
+ The smallest version of this project that still delivers the core experience is a simple, single-user medicine reminder system that ensures the patient takes their medication on time and allows a caregiver to know whether it was taken. This can be achieved using a microcontroller Raspberry Pico Pi 2, a buzzer or LED for alerts, and a single push button for user confirmation. At the scheduled time, the device gives an audible or visual alert prompting the user to take the medicine from a basic compartment. Once the medicine is taken, the user presses the button to confirm, and this status is sent over Wi-Fi to a simple webpage or dashboard for the caregiver to monitor remotely. This minimal setup removes complex features like RFID, multiple users, or automated dispensing, yet still fulfills the essential goal of timely medication intake and remote awareness, which defines the core value of the system. 
 
 ## 5.3 Stretch Features
 
-`1.Automatic pill dispensing (motors, mechanisms)
-Sounds impressive, but introduces mechanical failure points. A simple box works fine for the core function.`
-`2. Mobile app instead of simple webpage
-A full app feels professional, but a basic web interface already solves the caregiver visibility problem.`
-`3. Voice assistant integration (Alexa, Google Assistant)
-Cool demo feature, but doesn’t improve reliability or usability significantly.`
+ 1.Automatic pill dispensing (motors, mechanisms)
+Sounds impressive, but introduces mechanical failure points. A simple box works fine for the core function. 
+ 2. Mobile app instead of simple webpage
+A full app feels professional, but a basic web interface already solves the caregiver visibility problem. 
+ 3. Voice assistant integration (Alexa, Google Assistant)
+Cool demo feature, but doesn’t improve reliability or usability significantly. 
 
 ---
 
@@ -199,28 +199,28 @@ Check all that apply.
 
 ## 6.2 High-Level System Description
 
-`The system works as an automated medicine management unit designed to ensure that patients take the correct medicines at the right time. It begins with the input stage, where the system receives three types of inputs. First, an RFID card is scanned using an RC522 RFID Module, which identifies the patient based on a unique UID. Second, the system internally tracks time using a programmed timer to divide the day into different slots, determining when medicines should be taken. Third, touch sensors act as confirmation inputs, allowing the patient to indicate that they have taken the required medicines.`
+ The system works as an automated medicine management unit designed to ensure that patients take the correct medicines at the right time. It begins with the input stage, where the system receives three types of inputs. First, an RFID card is scanned using an RC522 RFID Module, which identifies the patient based on a unique UID. Second, the system internally tracks time using a programmed timer to divide the day into different slots, determining when medicines should be taken. Third, touch sensors act as confirmation inputs, allowing the patient to indicate that they have taken the required medicines. 
 
-`Once the inputs are received, the system moves to the processing stage, where the microcontroller acts as the brain. It compares the scanned RFID UID with stored patient data to identify the user, checks the current time slot, and decides which medicines are scheduled for that patient at that time. It also verifies whether the medicine has already been taken in that slot to prevent overdosing. If the slot has already been used, the system blocks further action; otherwise, it activates the appropriate outputs and waits for confirmation through touch sensors before marking the medicines as taken.`
+ Once the inputs are received, the system moves to the processing stage, where the microcontroller acts as the brain. It compares the scanned RFID UID with stored patient data to identify the user, checks the current time slot, and decides which medicines are scheduled for that patient at that time. It also verifies whether the medicine has already been taken in that slot to prevent overdosing. If the slot has already been used, the system blocks further action; otherwise, it activates the appropriate outputs and waits for confirmation through touch sensors before marking the medicines as taken. 
 
-`In the output stage, the system communicates its decisions through LEDs and alerts. Specific LEDs glow to indicate which medicine compartments should be accessed, guiding the patient visually. A Green LED is used as a warning indicator when an invalid action occurs, such as attempting to take medicine twice in the same time slot. Additionally, the system sends messages like “Patient 1 | Slot 0” through serial communication, which can later be used for monitoring or data logging.`
+ In the output stage, the system communicates its decisions through LEDs and alerts. Specific LEDs glow to indicate which medicine compartments should be accessed, guiding the patient visually. A Green LED is used as a warning indicator when an invalid action occurs, such as attempting to take medicine twice in the same time slot. Additionally, the system sends messages like “Patient 1 | Slot 0” through serial communication, which can later be used for monitoring or data logging. 
 
-`Physically, the system is structured as a compact medicine box containing multiple compartments, each associated with an LED and a touch sensor. The RFID reader is placed on the exterior for easy access, allowing patients to scan their cards before taking medicines. Inside the box, a microcontroller connects all components, including LEDs, sensors, and the RFID module, forming a complete embedded system that interacts with the user in a simple and guided manner.`
+ Physically, the system is structured as a compact medicine box containing multiple compartments, each associated with an LED and a touch sensor. The RFID reader is placed on the exterior for easy access, allowing patients to scan their cards before taking medicines. Inside the box, a microcontroller connects all components, including LEDs, sensors, and the RFID module, forming a complete embedded system that interacts with the user in a simple and guided manner. 
 
 
 ## 6.3 Input / Output Map
 
 | System Part                              | Type            | What It Does                                                               | 
 | ---------------------------------- | ------------------- | ------------------------------------------------------------------------------ |
-| `RFID Reader (MFRC522)`              | Input               | Reads RFID card UID to identify which patient is accessing the system        |
-| `Touch Sensors (TOUCH_1 to TOUCH_5)` | Input               | Detect user interaction to confirm that each medicine has been taken         |
-| `Time Slot Logic (millis())`       | Input (Virtual)     | Generates time-based slots to decide which medicines should be dispensed       |
-| `Patient UID Data`                   | Input (Stored Data) | Matches scanned RFID UID with predefined patient identities                  |
-| `LEDs (LED_1 to LED_5)`             | Output              | Indicate which medicine compartments should be accessed for current slot      |
-| `Red LED (LED_RED)`                | Output              | Alerts user if medicine already taken or invalid action                        |
-| `Serial Monitor (Serial.print`)    | Output              | Displays system status, UID, patient info, and slot data for debugging/logging |
-| `Medicine Logic (giveMedicine()`)  | Process             | Decides which medicines to activate based on patient and time slot             |
-| `Touch Confirmation Loop`            | Process             | Ensures all required medicines are taken before marking slot complete        |
+|  RFID Reader (MFRC522)               | Input               | Reads RFID card UID to identify which patient is accessing the system        |
+|  Touch Sensors (TOUCH_1 to TOUCH_5)  | Input               | Detect user interaction to confirm that each medicine has been taken         |
+|  Time Slot Logic (millis())        | Input (Virtual)     | Generates time-based slots to decide which medicines should be dispensed       |
+|  Patient UID Data                    | Input (Stored Data) | Matches scanned RFID UID with predefined patient identities                  |
+|  LEDs (LED_1 to LED_5)              | Output              | Indicate which medicine compartments should be accessed for current slot      |
+|  Red LED (LED_RED)                 | Output              | Alerts user if medicine already taken or invalid action                        |
+|  Serial Monitor (Serial.print )    | Output              | Displays system status, UID, patient info, and slot data for debugging/logging |
+|  Medicine Logic (giveMedicine() )  | Process             | Decides which medicines to activate based on patient and time slot             |
+|  Touch Confirmation Loop             | Process             | Ensures all required medicines are taken before marking slot complete        |
 
 ---
 
@@ -238,10 +238,10 @@ Check all that apply.
 
 | Dimension        | Value   |
 | ---------------- | ------- |
-| Length           | `16 cm` |
-| Width            | `16 cm` |
-| Height           | `8 cm`  |
-| Estimated weight | `400 g` |
+| Length           |  16 cm  |
+| Width            |  16 cm  |
+| Height           |  8 cm   |
+| Estimated weight |  400 g  |
 
 ---
 
@@ -251,11 +251,11 @@ Check all that apply.
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-| `[Raspberry Pi Pico 2]`   | `1`      | `[Main controller]`                   |
-| `[Touch Sensor]`          | `5`      | `[Verification]`                      |
-| `[RFID (RC522)]`           | `1`      | `[Individual Detection]`             |
-| `[LED]`                   | `8`      | `[Indication]`                        |
-| `[Buzzer]`                | `2`      | `[Alert]`                             |
+|  [Raspberry Pi Pico 2]    |  1       |  [Main controller]                    |
+|  [Touch Sensor]           |  5       |  [Verification]                       |
+|  [RFID (RC522)]            |  1       |  [Individual Detection]              |
+|  [LED]                    |  8       |  [Indication]                         |
+|  [Buzzer]                 |  2       |  [Alert]                              |
 
 
 ## 8.2 Wiring Plan
@@ -263,17 +263,17 @@ Check all that apply.
 Describe the main electrical connections.
 
 **Response:**  
-`The **RP2040 Pico** is the central controller. It communicates with the **RC522 RFID module** over the SPI bus using five wires: GPIO 17 (CS), GPIO 20 (RST), plus the shared MOSI, MISO, and SCK lines. The CS pin selects the RC522 on the SPI bus, and the RST pin allows hardware reset of the module.
+ The **RP2040 Pico** is the central controller. It communicates with the **RC522 RFID module** over the SPI bus using five wires: GPIO 17 (CS), GPIO 20 (RST), plus the shared MOSI, MISO, and SCK lines. The CS pin selects the RC522 on the SPI bus, and the RST pin allows hardware reset of the module.
 The **five medicine LEDs** are each connected directly from their respective GPIO output pins (10, 11, 14, 15, 21) to GND, with no resistors in the circuit. The **sixth alert LED** (also green) follows the same direct connection on GPIO 22 — it lights up as a warning when a patient attempts to scan their card after already completing that time slot's dose.
 The **five capacitive touch sensors** are each wired with one terminal to a dedicated GPIO input pin (26, 27, 28, 6, 7) and the other terminal to GND. When the patient's finger touches the sensor pad, the pin reads HIGH; when untouched, it reads LOW.
-All components — the RFID module, LEDs, and touch sensors — share a **common GND rail** connected to the Pico's GND pin to ensure a stable voltage reference across the entire circuit. The system is powered via the Pico's **Micro-USB port** at 5V, which the onboard regulator steps down to 3.3V to supply the RC522 module and all logic-level signals.`
+All components — the RFID module, LEDs, and touch sensors — share a **common GND rail** connected to the Pico's GND pin to ensure a stable voltage reference across the entire circuit. The system is powered via the Pico's **Micro-USB port** at 5V, which the onboard regulator steps down to 3.3V to supply the RC522 module and all logic-level signals. 
 
 ## 8.3 Circuit Diagram
 
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
+ [Upload image and link here] 
 <img width="867" height="1156" alt="" src="" />
 
 
@@ -281,10 +281,10 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question         | Response                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Device(Laptop)`                                                                                                                           |
-| Voltage required | `3.3V for Circuit`                                                                  |
-| Current concerns | `Possibilty of reduction in LED's Brightness due to lot of LEDs being turned on simultaneously`                                       |
-| Safety concerns  | `Not Applicable` |
+| Power source     |  Device(Laptop)                                                                                                                            |
+| Voltage required |  3.3V for Circuit                                                                   |
+| Current concerns |  Possibilty of reduction in LED's Brightness due to lot of LEDs being turned on simultaneously                                        |
+| Safety concerns  |  Not Applicable  |
 
 ---
 
@@ -294,9 +294,9 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform                | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
-| `[Aurdino ID]`                 | `Code into Raspberry Pi Pico`                  |
-| `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
-| `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
+|  [Aurdino ID]                  |  Code into Raspberry Pi Pico                   |
+|  [Python/PyGame/OpenCV]        |  Track markers, game logic, create projection  |
+|  [Fusion/Blender/Illustrator]  |  [Prototyping structure]                       |
 
 ## 10.2 Software Logic
 
@@ -362,11 +362,11 @@ Suggested sequence:
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| Raspberry Pi Pico                |  1       | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
-| Touch sensor                     |  5       | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
-| Buzzer                           |  2       | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
-| Led                              |  8       | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
-| RFID RC522                       | 1        | `[No]`  | `[Yes]`      | `[200]`        |                               |                           |
+| Raspberry Pi Pico                |  1       |  Yes    |  No          |  0             |  38 Pin ESP32                 |  [To control components]  |
+| Touch sensor                     |  5       |  [Yes]  |  [No]        |  0             |  [LN296]                      |  [To drive both motors]   |
+| Buzzer                           |  2       |  [No]   |  [Yes]       |  [150]         |  [BO Motors and 6 cm wheels]  |  [high torque motors]     |
+| Led                              |  8       |  [No]   |  [Yes]       |  [75]          |                               |                           |
+| RFID RC522                       | 1        |  [No]   |  [Yes]       |  [200]         |                               |                           |
 
 ## 11.2 Material Justification
 
@@ -416,12 +416,12 @@ The **RC522 RFID module** was chosen over a keypad or fingerprint sensor for ide
 
 | Budget Item           | Estimated Cost              |
 | --------------------- | ---------------------------:|
-| Electronics           | `[400]`                     |
-| Mechanical parts      | `[200]`                     |
-| Fabrication materials | `[0 (Available on campus)]` |
-| Purchased extras      | `[0]`                       |
-| Contingency           | `[300]`                     |
-| **Total**             | `[900]`                     |
+| Electronics           |  [400]                      |
+| Mechanical parts      |  [200]                      |
+| Fabrication materials |  [0 (Available on campus)]  |
+| Purchased extras      |  [0]                        |
+| Contingency           |  [300]                      |
+| **Total**             |  [900]                      |
 
 ## 11.5 Budget Reflection
 
@@ -452,19 +452,19 @@ Include:
 
 | Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
 | ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
+| T1      |  [Finalize concept]     |  [Both]  |  2              |  1st April   |  None      |  Done  |
 
 
 ## 12.3 Responsibility Split
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
-| Concept              | `[Gopal]`  | `[Kader]`     |
-| Electronics          | `[]`       | `[]`          |
-| Coding               | `[]`       | `[]`          |
-| Mechanical build     | `[]`       | `[]`          |
-| Testing              | `[]`       | `[]`          |
-| Documentation        | `[]`       | `[]`          |
+| Concept              |  [Gopal]   |  [Kader]      |
+| Electronics          |  []        |  []           |
+| Coding               |  []        |  []           |
+| Mechanical build     |  []        |  []           |
+| Testing              |  []        |  []           |
+| Documentation        |  []        |  []           |
 
 ---
 
@@ -518,10 +518,10 @@ Expected outcomes:
 
 | Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
 | ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
+| Week 1 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
+| Week 2 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
+| Week 3 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
+| Week 4 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
 
 ---
 
@@ -531,7 +531,7 @@ Expected outcomes:
 
 | Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
 | --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       | `Technical`  | `Medium`   | `High`   | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop | `[Gopal]`           |
+| WiFi connection between laptop and ESP32 becomes unstable       |  Technical   |  Medium    |  High    | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop |  [Gopal]            |
 
 
 ## 14.2 Biggest Unknown Right Now
@@ -549,20 +549,20 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
 | ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `[Wifi connection]`    | `[Check if motor spins via app button]`                                              | `[Both motors accurately respond to wifi signals]`                                                   |
+|  [Wifi connection]     |  [Check if motor spins via app button]                                               |  [Both motors accurately respond to wifi signals]                                                    |
                        |
 ## 15.2 Testing and Debugging Log
 
 | Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
 | ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-| `18th April`  | `Car not balancing properly`          | `Mechanical` | `Add low-friction caster support to one side` | `Worked`             | `improve caster structure`                     |
+|  18th April   |  Car not balancing properly           |  Mechanical  |  Add low-friction caster support to one side  |  Worked              |  improve caster structure                      |
 
 
 ## 15.3 Playtesting Notes
 
 | Tester      | What They Did                        | What Confused Them                    | What They Enjoyed                         | What You Will Change                          |
 | ----------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- | --------------------------------------------- |
-| `Gopal` | `Tried navigating through obstacles` | `Some obstacles ewren't clear enough` | `Liked projection + real car interaction` | `Add a slight red highlight around obstacles` |
+|  Gopal  |  Tried navigating through obstacles  |  Some obstacles ewren't clear enough  |  Liked projection + real car interaction  |  Add a slight red highlight around obstacles  |
 
 
 ---
@@ -584,21 +584,21 @@ Include:
 - revisions.
 
 **Response:**  
-`The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system.`
+ The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system. 
 
-`Design (CAD Modeling):
+ Design (CAD Modeling):
 The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
 Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components.`
+The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components. 
 
-`Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
+ Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
 Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability.`
+Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability. 
 
-`Environment Setup (Dark Room Fabrication):
+ Environment Setup (Dark Room Fabrication):
 To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
 Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment.`
+Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment. 
 
 ## 16.2 Build Photos
 
@@ -682,7 +682,7 @@ What would you improve next?
 
 **Response:**  
 
-` `
+   
 
 ---
 
