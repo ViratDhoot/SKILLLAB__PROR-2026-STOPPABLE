@@ -555,10 +555,8 @@ The **RC522 RFID module** was chosen over a keypad or fingerprint sensor for ide
 ## 11.5 Budget Reflection
 
 
-
-If your cost is too high, what can be simplified, removed, substituted, or shared?
-
-**Response:**  
+The cost of the project is already low due to the use of available components. 
+If further reduction is needed, extra LEDs and buzzers can be minimized, and shared lab components can be reused.
 
 
 ---
@@ -581,12 +579,14 @@ The team maintained collaborative work processes because all significant technic
 ## 12.2 Task Breakdown
 
 
-
-| Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
-| ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      |  [Finalize concept]     |  [Both]  |  2              |  1st April   |  None      |  Done  |
-
-
+| Task ID | Task                     | Owner      | Estimated Hours | Time Slot        | Dependency | Status |
+| ------- | ------------------------ | ---------- | --------------- | ---------------- | ---------- | ------ |
+| T1      | Finalize Concept         | Team       | 1               | 09:00 – 10:00 AM | None       | Done   |
+| T2      | RFID Integration         | Saumitra   | 1.5             | 10:00 – 11:30 AM | T1         | Done   |
+| T3      | LED + Sensor Wiring      | Anish      | 1.5             | 11:30 – 01:00 PM | T2         | Done   |
+| T4      | Code Logic Development   | Saumitra   | 2               | 01:30 – 03:30 PM | T2         | Done   |
+| T5      | Fabrication & Assembly   | Nitisha    | 1               | 03:30 – 04:30 PM | T3         | Done   |
+| T6      | Documentation + PPT      | Virat      | 1               | 04:30 – 05:00 PM | T4         | Done   |
 
 
 ## 12.3 Responsibility Split
