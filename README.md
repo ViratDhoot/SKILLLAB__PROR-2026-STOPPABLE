@@ -63,10 +63,10 @@ Team STOPPABLE
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-|  Saumitra Bata  |  [Hardware / Coding ]  |  [Documentation]   |  Documentation, Gift of Gab  |
-|  Anish Deodhar   |  [Hardware / Fabrication]    |  [Coding]      |  Material Handling, Gift of Gab     |
-|  Virat Dhoot  |  [Documentation/ Hardware  ]  |  [Coding]   |  Documentation, Material Handling  |
-|  Nitisha Dung   |  [Fabrication/Harware]    |  [Coding]      |  Material Handling, Hardware     |
+|  Saumitra Bata  |  Hardware / Coding  |  Documentation  |  Documentation, Gift of Gab  |
+|  Anish Deodhar   |  Hardware / Fabrication    |  Coding     |  Material Handling, Gift of Gab     |
+|  Virat Dhoot  |  Documentation/ Hardware    |  Coding   |  Documentation, Material Handling  |
+|  Nitisha Dung   |  Fabrication/Harware    |  Coding      |  Material Handling, Hardware     |
 
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
@@ -123,8 +123,8 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-|  [Scientific Report]  |  https://www.ncbi.nlm.nih.gov/books/NBK225187/  |  Medication errors are a major cause of preventable deaths in healthcare systems.  |
-|  [Encyclopedia article]  |  https://en.wikipedia.org/wiki/Overmedication  |  Managing multiple medicines and dosage is one of the biggest challenges in elderly care.   |
+|  Scientific Report  |  https://www.ncbi.nlm.nih.gov/books/NBK225187/  |  Medication errors are a major cause of preventable deaths in healthcare systems.  |
+|  Encyclopedia article  |  https://en.wikipedia.org/wiki/Overmedication  |  Managing multiple medicines and dosage is one of the biggest challenges in elderly care.   |
 |             |                                                                     |                                                                      |
 
 ## 3.2 Original Twist
@@ -258,11 +258,11 @@ Check all that apply.
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-|  [Raspberry Pi Pico 2]    |  1       |  [Main controller]                    |
-|  [Touch Sensor]           |  5       |  [Verification]                       |
-|  [RFID (RC522)]            |  1       |  [Individual Detection]              |
-|  [LED]                    |  8       |  [Indication]                         |
-|  [Buzzer]                 |  2       |  [Alert]                              |
+|  Raspberry Pi Pico 2    |  1       |  Main controller                    |
+|  Touch Sensor          |  5       |  Verification                     |
+|  RFID (RC522)            |  1       |  Individual Detection              |
+|  LED                   |  8       |  Indication                         |
+|  Buzzer                 |  2       |  Alert                             |
 
 
 ## 8.2 Wiring Plan
@@ -301,9 +301,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform                | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
-|  [Aurdino ID]                  |  Code into Raspberry Pi Pico                   |
-|  [Python/PyGame/OpenCV]        |  Track markers, game logic, create projection  |
-|  [Fusion/Blender/Illustrator]  |  [Prototyping structure]                       |
+|  Aurdino IDE                |  Code into Raspberry Pi Pico                   |
+
 
 ## 10.2 Software Logic
 
@@ -369,11 +368,9 @@ Suggested sequence:
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-|  [Raspberry Pi Pico]                         |  1       |  Yes    |  No          |  0             |  38 Pin ESP32                 |  [To control components]  |
-|  [Motor Driver]                  |  [1]     |  [Yes]  |  [No]        |  0             |  [LN296]                      |  [To drive both motors]   |
-|  [DC Motors and wheel]           |  [2]     |  [No]   |  [Yes]       |  [150]         |  [BO Motors and 6 cm wheels]  |  [high torque motors]     |
-|  [Buck Converter]                |  [1]     |  [No]   |  [Yes]       |  [75]          |                               |                           |
-|  [Li-ion batteries with holder]  |  [1]     |  [No]   |  [Yes]       |  [200]         |                               |                           |
+|  Raspberry Pi Pico                         |  1       |  Yes    |  No          |  0             |  38 Pin ESP32                 |  To control components  |
+|  Buck Converter                |  1     |  No   |  Yes       |  75          |                               |                           |
+|  Li-ion batteries with holder  |  1     |  No   |  Yes       |  200         |                               |                           |
 
 ## 11.2 Material Justification
 
@@ -387,20 +384,20 @@ Explain why you selected your main materials and components.
 
 | Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
 | -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
-|  BO Motors + Wheels  |  Drive system for car    |  robu.in      |  15th April                 |  [Received]  |
-|  Buck Converter      |  Stable power for ESP32  |  local store  |  before testing             |  [Received]  |
+|  Buck Converter      |  Stable power for ESP32  |  local store  |  before testing             |  Received  |
 |  Li-ion Batteries    |  Portable power          |  local store  |  before testing             |  Recieved    |
+
 
 ## 11.4 Budget Summary
 
 | Budget Item           | Estimated Cost              |
 | --------------------- | ---------------------------:|
-| Electronics           |  [400]                      |
-| Mechanical parts      |  [200]                      |
-| Fabrication materials |  [0 (Available on campus)]  |
-| Purchased extras      |  [0]                        |
-| Contingency           |  [300]                      |
-| **Total**             |  [900]                      |
+| Electronics           |  400                      |
+| Mechanical parts      |  200                      |
+| Fabrication materials |  0 (Available on campus)]  |
+| Purchased extras      |  0                       |
+| Contingency           |  300                      |
+| **Total**             |  900                      |
 
 ## 11.5 Budget Reflection
 
@@ -431,7 +428,7 @@ Include:
 
 | Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
 | ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      |  [Finalize concept]     |  [Both]  |  2              |  1st April   |  None      |  Done  |
+| T1      |  Finalize concept    |  Both  |  2              |  1st April   |  None      |  Done  |
 
 
 ## 12.3 Responsibility Split
@@ -497,10 +494,10 @@ Expected outcomes:
 
 | Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
 | ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 2 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 3 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 4 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
+| Week 1 |  Write here  |  Write here          |  Write here  |  Write here  |
+| Week 2 |  Write here  |  Write here          |  Write here  |  Write here  |
+| Week 3 |  Write here  |  Write here          |  Write here  |  Write here  |
+| Week 4 |  Write here  |  Write here          |  Write here  |  Write here  |
 
 ---
 
@@ -528,7 +525,7 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
 | ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-|  [Wifi connection]     |  [Check if motor spins via app button]                                               |  [Both motors accurately respond to wifi signals]                                                    |
+|  Wifi connection     |  Check if motor spins via app button                                               |  Both motors accurately respond to wifi signals                                                   |
                        |
 ## 15.2 Testing and Debugging Log
 
