@@ -191,17 +191,14 @@ Check all that apply.
 
 ## 6.2 High-Level System Description
 
-Explain how the system works in simple terms.
+`The system works as an automated medicine management unit designed to ensure that patients take the correct medicines at the right time. It begins with the input stage, where the system receives three types of inputs. First, an RFID card is scanned using an RC522 RFID Module, which identifies the patient based on a unique UID. Second, the system internally tracks time using a programmed timer to divide the day into different slots, determining when medicines should be taken. Third, touch sensors act as confirmation inputs, allowing the patient to indicate that they have taken the required medicines.`
 
-Include:
+`Once the inputs are received, the system moves to the processing stage, where the microcontroller acts as the brain. It compares the scanned RFID UID with stored patient data to identify the user, checks the current time slot, and decides which medicines are scheduled for that patient at that time. It also verifies whether the medicine has already been taken in that slot to prevent overdosing. If the slot has already been used, the system blocks further action; otherwise, it activates the appropriate outputs and waits for confirmation through touch sensors before marking the medicines as taken.`
 
-- input,
-- processing,
-- output,
-- physical structure,
-- app interaction if any.
+`In the output stage, the system communicates its decisions through LEDs and alerts. Specific LEDs glow to indicate which medicine compartments should be accessed, guiding the patient visually. A Green LED is used as a warning indicator when an invalid action occurs, such as attempting to take medicine twice in the same time slot. Additionally, the system sends messages like “Patient 1 | Slot 0” through serial communication, which can later be used for monitoring or data logging.`
 
-**Response:**  
+`Physically, the system is structured as a compact medicine box containing multiple compartments, each associated with an LED and a touch sensor. The RFID reader is placed on the exterior for easy access, allowing patients to scan their cards before taking medicines. Inside the box, a microcontroller connects all components, including LEDs, sensors, and the RFID module, forming a complete embedded system that interacts with the user in a simple and guided manner.`
+
 
 ## 6.3 Input / Output Map
 
