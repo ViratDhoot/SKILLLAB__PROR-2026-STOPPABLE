@@ -76,6 +76,14 @@ Team STOPPABLE
 
 <img width="813" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
 
+---
+
+## 🎥 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/KGYOpVLvnqs/0.jpg)](https://www.youtube.com/watch?v=KGYOpVLvnqs)
+
+---
+
 ## 1.4 One-Line Pitch
 
 `A Time synced automated medicine box with unique tags for individuals to take precise medication at right time catered to every individual.`
