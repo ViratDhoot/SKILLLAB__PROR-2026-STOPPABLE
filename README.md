@@ -42,6 +42,7 @@ By the final review, this README should clearly show:
 - your failures and changes,
 - your final outcome.
 
+
 ## Rules
 
 - Fill every section.
@@ -53,11 +54,15 @@ By the final review, this README should clearly show:
 
 ---
 
+
 # 1. Team Identity
+
 
 ## 1.1 Studio / Group Name
 
+
 Team STOPPABLE
+
 
 ## 1.2 Team Members
 
@@ -68,9 +73,13 @@ Team STOPPABLE
 |  Virat Dhoot  |  Documentation/ Hardware  ]  |  [Coding]   |  Documentation, Material Handling  |
 |  Nitisha Dung   |  Fabrication/Harware]    |  [Coding]      |  Material Handling, Hardware     |
 
+
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
+
+
 ## 1.3 Project Title
+
 
  ### Sync-Box 
  
@@ -79,15 +88,21 @@ Team STOPPABLE
 
 ---
 
+
+
 ## 🎥 Demo Video
 
 [![Watch the video](https://img.youtube.com/vi/KGYOpVLvnqs/0.jpg)](https://www.youtube.com/watch?v=KGYOpVLvnqs)
 
 ---
 
+
+
 ## 1.4 One-Line Pitch
 
  A Time synced automated medicine box with unique tags for individuals to take precise medication at right time catered to every individual. 
+
+
 
 ## 1.5 Expanded Project Idea
  
@@ -98,7 +113,11 @@ It combines technologies like an Raspberry Pi Pico 2, RFID module, motors for di
 ---
 
 
+
+
 # 2. Philosophy Fit
+
+
 
 ## 2.1 Experience, Not Social Problem
 
@@ -117,7 +136,11 @@ You are allowed to build:
 
 
 
+
+
 # 3. Inspiration
+
+
 
 ## 3.1 References
 
@@ -131,6 +154,8 @@ List what inspired the project.
 
 
 
+
+
 ## 3.2 Original Twist
 
 The system operates as a personalized medication guidance system which uses RFID technology. The system uses RFID cards to verify which person should receive which medications at the correct schedule instead of dispensing pills automatically. The system uses touch sensors to verify drug intake while specific LEDs display which medications should be taken according to the current time. The system offers personalized solutions through its user-friendly design which includes double-dose prevention and separate alert systems for missed doses.
@@ -138,7 +163,10 @@ The system operates as a personalized medication guidance system which uses RFID
 
 ---
 
+
+
 # 4. Project Intent
+
 
 
 ## 4.1 User Journey 
@@ -151,7 +179,10 @@ Another resident scans their card after a few minutes which leads to different L
 ---
 
 
+
+
 # 5. Definition of Success
+
 
 
 
@@ -164,9 +195,11 @@ Example: your medicine box project could dispense pills correctly—but if an ol
 
 
 
+
 ## 5.2 Minimum Usable Version 
 
 The smallest version of this project that still delivers the core experience is a simple, single-user medication guidance system that ensures the patient takes their medicine on time. The system can be built with a Raspberry Pi Pico and two LEDs for status display and one touch sensor for user verification. The system uses an LED light to notify users about their scheduled medication time. After the user takes their medicine, they press the touch sensor to confirm their action, which causes the system to record the event and reset for the upcoming cycle. This basic configuration maintains essential functions for confirming medication intake at scheduled times, but it eliminates features such as RFID and multiple user access and alert systems.
+
 
 
 
@@ -183,7 +216,9 @@ Cool demo feature, but doesn’t improve reliability or usability significantly.
 
 
 
+
 # 6. System Overview
+
 
 
 
@@ -215,6 +250,10 @@ Check all that apply.
 
 - [ ] Other:
 
+
+
+
+
 ## 6.2 High-Level System Description
 
  The system works as an automated medicine management unit designed to ensure that patients take the correct medicines at the right time. It begins with the input stage, where the system receives three types of inputs. First, an RFID card is scanned using an RC522 RFID Module, which identifies the patient based on a unique UID. Second, the system internally tracks time using a programmed timer to divide the day into different slots, determining when medicines should be taken. Third, touch sensors act as confirmation inputs, allowing the patient to indicate that they have taken the required medicines. 
@@ -224,6 +263,9 @@ Check all that apply.
  In the output stage, the system communicates its decisions through LEDs and alerts. Specific LEDs glow to indicate which medicine compartments should be accessed, guiding the patient visually. A Green LED is used as a warning indicator when an invalid action occurs, such as attempting to take medicine twice in the same time slot. Additionally, the system sends messages like “Patient 1 | Slot 0” through serial communication, which can later be used for monitoring or data logging. 
 
  Physically, the system is structured as a compact medicine box containing multiple compartments, each associated with an LED and a touch sensor. The RFID reader is placed on the exterior for easy access, allowing patients to scan their cards before taking medicines. Inside the box, a microcontroller connects all components, including LEDs, sensors, and the RFID module, forming a complete embedded system that interacts with the user in a simple and guided manner. 
+
+
+
 
 
 ## 6.3 Input / Output Map
@@ -242,17 +284,29 @@ Check all that apply.
 
 ---
 
+
+
+
 # 7. Sketches and Visual Planning
+
+
 
 ## 7.1 Concept Sketch
 
+
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/non%20labled.png" />
+
+
 
 ## 7.2 Labeled Build Sketch
 
+
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/labled.png" />
 
+
+
 ## 7.3 Approximate Dimensions
+
 
 | Dimension        | Value   |
 | ---------------- | ------- |
@@ -261,11 +315,17 @@ Check all that apply.
 | Height           |  8 cm   |
 | Estimated weight |  400 g  |
 
+
+
 ---
+
 
 # 8. Electronics Planning
 
+
 ## 8.1 Electronics Used
+
+
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
@@ -276,7 +336,11 @@ Check all that apply.
 |  Buzzer                 |  2       |  Alert                              |
 
 
+
+
 ## 8.2 Wiring Plan
+
+
 
 Describe the main electrical connections.
 
@@ -290,7 +354,9 @@ The Pico’s GND serves as the common ground for all components, which creates a
 
 
 
+
 ## 8.3 Circuit Diagram
+
 
 
 Insert a hand-drawn or software-made circuit diagram.
@@ -301,6 +367,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 # 9. Power Plan
 
+
 | Question         | Response                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Power source     |  Device(Laptop)                                                                                                                            |
@@ -310,7 +377,11 @@ Insert a hand-drawn or software-made circuit diagram.
 
 ---
 
+
+
 # 10. Software Planning
+
+
 
 ## 10.1 Software Tools
 
@@ -326,6 +397,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 
 ## 10.2 Software Logic
+
+
 
 Describe what the code must do.
 
@@ -361,6 +434,9 @@ Serial output sends data like patient and slot, which can be extended using an E
 **Reset behavior:**
 LEDs and alerts reset automatically after use, and the system continuously runs for the next cycle.
 
+
+
+
 ## 10.3 Code Flowchart
 
 Insert a flowchart showing your code logic.
@@ -383,9 +459,12 @@ Suggested sequence:
 
 
 
+
 # 11. Bill of Materials
 
+
 ## 11.1 Full BOM
+
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
@@ -395,7 +474,10 @@ Suggested sequence:
 | Led                              |  8       |  [No]   |  [Yes]       |  [75]          |                               |                           |
 | RFID RC522                       | 1        |  [No]   |  [Yes]       |  [200]         |                               |                           |
 
+
+
 ## 11.2 Material Justification
+
 
 Explain why you selected your main materials and components.
 
@@ -405,12 +487,18 @@ LEDs were chosen as the output indicator instead of an OLED or LCD display becau
 Capacitive touch sensors (red round cap type) were chosen over mechanical push buttons because they require only a light touch with no physical force, which matters for patients with weak grip or joint pain. They also have no mechanical parts that can wear out over repeated use.
 Buzzers were added as a missed-dose alert mechanism because a purely visual LED reminder is easy to miss, especially if the patient is in another room or asleep. Two separate buzzers (one per patient) allow the system to alert each individual independently without disturbing the other.
 
+
+
 ## 11.3 Items You chose
 Here's your **Section 11.2 — Material Justification** and **Section 11.3 — Items You Chose:**
 
 ---
 
+
+
 **11.2 Material Justification**
+
+
 
 The **RP2040 Pico** was chosen as the microcontroller because it has sufficient GPIO pins to handle all five LEDs, five touch sensors, the RFID module's SPI bus, two buzzers, and one alert LED simultaneously without needing a port expander. Its onboard 3.3V regulator also directly powers the RC522 module, removing the need for an external voltage regulator.
 
@@ -424,7 +512,12 @@ The **RC522 RFID module** was chosen over a keypad or fingerprint sensor for ide
 
 ---
 
+
+
+
 **11.3 Items You Chose**
+
+
 
 |    Component    |   Model / Type              |    Quantity   |           Purpose                              |
 | Microcontroller | RP2040 Pico                 |     1         | Central logic, GPIO control, SPI communication |
@@ -439,7 +532,13 @@ The **RC522 RFID module** was chosen over a keypad or fingerprint sensor for ide
 | USB cable       | Micro-USB                   |     1         | Power supply from laptop / adapter             |
   
 
+
+
+
 ## 11.4 Budget Summary
+
+
+
 
 | Budget Item           | Estimated Cost              |
 | --------------------- | ---------------------------:|
@@ -450,31 +549,49 @@ The **RC522 RFID module** was chosen over a keypad or fingerprint sensor for ide
 | Contingency           |  [300]                      |
 | **Total**             |  [900]                      |
 
+
+
+
 ## 11.5 Budget Reflection
+
+
 
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
 
+
 ---
+
+
 
 # 12. Planning the Work
 
+
+
 ## 12.1 Team Working Agreement
+
 
 We divided tasks according to our individual strengths in work performance. Anish operated in the hardware domain because he managed wiring tasks and solved technical issues while recording the complete demonstration. Saumitra managed the coding and WiFi installation tasks whereas Nitisha constructed the physical structure and led both the presentation and documentation work. Virat established the initial phase of our project by creating the first documentation framework and report templates.
 
 The team maintained collaborative work processes because all significant technical decisions required group input. The team maintained progress through short unplanned meetings and active testing sessions in which team members demonstrated their operational results. The team solved problems by redistributing tasks and providing support to complete the assignment. We maintained our notes by updating them throughout the project and then we worked together to create a unified final report which represented our work as one complete project.
 
 
+
 ## 12.2 Task Breakdown
+
+
 
 | Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
 | ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
 | T1      |  [Finalize concept]     |  [Both]  |  2              |  1st April   |  None      |  Done  |
 
 
+
+
 ## 12.3 Responsibility Split
+
+
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
@@ -488,9 +605,15 @@ The team maintained collaborative work processes because all significant technic
  
 ---
 
+
+
 # 13. 2 hour Milestones
 
+
+
 ## 13.1 8-hour Plan
+
+
 
 ### Bi Hour 1 — Plan and De-risk
 
@@ -504,7 +627,10 @@ Expected outcomes:
 - [ ] Key uncertainty identified
 - [x] Basic feasibility tested
 
+
+
 ### Bi Hour 2 — Build Subsystems
+
 
 Expected outcomes:
 
@@ -513,6 +639,8 @@ Expected outcomes:
 - [ ] App UI started if needed
 - [x] Mechanical concept tested
 - [x] Main subsystems partially working
+
+
 
 ### Bi Hour 3 — Integrate
 
@@ -524,6 +652,8 @@ Expected outcomes:
 - [ ] App connected if required
 - [x] First playable version exists
 
+
+
 ### Bi Hour 4 — Refine and Finish
 
 Expected outcomes:
@@ -533,6 +663,8 @@ Expected outcomes:
 - [x] Improvements made
 - [x] Documentation completed
 - [x] Final build ready
+
+
 
 ## 13.2  Update Log
 
@@ -546,9 +678,14 @@ Expected outcomes:
 
 ---
 
+
+
 # 14. Risks and Unknowns
 
+
+
 ## 14.1 Risk Register
+
 
 
 | Risk                                               | Type        | Likelihood | Impact | Mitigation Plan                                                          | Owner |
@@ -561,7 +698,12 @@ Expected outcomes:
 | Logic errors causing incorrect medicine indication | Software    | Medium     | High   | Debug using Serial Monitor and test all edge cases                       | Team  |
 | User confusion in interaction                      | Usability   | Low        | Medium | Design clear LED indicators and keep interaction simple and intuitive    | Team  |
 
+
+
+
 ## 14.2 Biggest Unknown Right Now
+
+
 
 What is the single biggest uncertainty in your project at this stage?
 
@@ -570,7 +712,11 @@ The biggest question mark left is whether the servo motor can actually behave it
 
 ---
 
+
+
 # 15. Testing 
+
+
 
 ## 15.1 Technical Testing Plan
 
@@ -587,7 +733,11 @@ The biggest question mark left is whether the servo motor can actually behave it
 | Overall system flow      | Perform full cycle (scan → take → confirm)    | System operates smoothly without errors or unexpected behavior |
 
 
+
+
 ## 15.2 Testing and Debugging Log
+
+
 
 | Date       | Problem Found                       | Type           | What You Tried                                         | Result | Next Action                     |
 | ---------- | ----------------------------------- | -------------- | ------------------------------------------------------ | ------ | ------------------------------- |
@@ -597,6 +747,7 @@ The biggest question mark left is whether the servo motor can actually behave it
 | 21st April | System freezing during operation    | Software       | Removed blocking loops and used millis()               | Worked | Optimize code structure         |
 | 22nd April | Buzzer triggering incorrectly       | Logic          | Switched from slot-based to time-based logic           | Worked | Improve independence of buzzers |
 | 23rd April | One buzzer not working properly     | Hardware/Logic | Separated buzzer timing logic                          | Worked | Final testing of alerts         |
+
 
 
 
@@ -612,9 +763,15 @@ The biggest question mark left is whether the servo motor can actually behave it
 
 ---
 
+
+
 # 16. Build Documentation
 
+
+
 ## 16.1 Fabrication Process
+
+
 
 The fabrication process of the smart medication management system included designing, assembling, wiring, and refining both the hardware structure and electronic components. 
 
@@ -625,6 +782,8 @@ Basic cutting and shaping were done to make openings for the LEDs, RFID scanner,
 Wiring connected all components to the microcontroller. This ensured proper power distribution, common grounding, and stable signal connections. Care was taken to organize the wires to prevent loose connections and interference.
 
 Minor finishing steps involved securing loose components, properly aligning sensors, and making sure the LEDs were clearly visible for user interaction. Throughout the process, multiple revisions were made to resolve issues like incorrect connections, unstable sensor readings, and component placement. This resulted in a stable and functional prototype.
+
+
 
  
 ## 16.2 Build Photos
@@ -642,22 +801,35 @@ Minor finishing steps involved securing loose components, properly aligning sens
 
 # 17. Final Outcome
 
+
+
 ## 17.1 Final Description
+
 
 The final version of the project is a fully functional smart medication management system designed to ensure accurate and timely medicine intake for multiple users. The system uses RFID cards to uniquely identify patients and, based on predefined time slots, activates specific LEDs to indicate the medicines to be taken. Touch sensors allow users to confirm intake, after which the system records completion and turns off the corresponding indicators. It includes a safety mechanism that prevents repeated access within the same time slot to avoid double dosage. Additionally, each patient has an independent buzzer alert that activates if a dose is missed and continues until the medication is taken. The system is built on a Raspberry Pi Pico with a clean, non-blocking logic architecture, ensuring stable and continuous operation.
 
 
+
+
 ## 17.2 What Works Well
+
 
 The system's main parts and functions are all working as they should. The RFID-based identification system correctly tells different patients apart. The LED lights clearly show which medicines need to be taken, and the time-based logic correctly sets up the medication schedules. The touch sensors always work, which makes it easy to confirm that the medicine was taken. The system works well to stop people from taking the same dose twice in the same time slot. The independent buzzer alert system also works for each patient, only sending reminders when a dose is missed. The hardware and software work well together overall, and the system runs smoothly without any problems or delays.
 
 
+
+
 ## 17.3 What Still Needs Improvement
+
 
 The integration of the servo motor for automatic medicine dispensing still needs work. The core system for identification, indication, and confirmation is working fine, but the servo mechanism isn't fully in sync with the system logic yet. There needs to be more work on issues like precise control, consistent movement, and making sure that the medicine slots are lined up correctly. Also, the mechanical design for dispensing needs to be better calibrated to make sure it works reliably without getting stuck or lost. More work needs to be done to make sure that the servo works perfectly with the current system so that automatic dispensing is smooth and reliable.
 
 
+
+
+
 ## 17.4 What Changed From the Original Plan
+
 
 Our original vision for the Smart Medicine Dispenser was ambitious: a fully automated system featuring servo-driven dispensing, real-time cloud alerts via the Pico W, and a dedicated LCD interface. However, as development progressed, we encountered the classic "mechanical hurdle." Precise pill alignment, servo synchronization, and the constant risk of jamming posed a threat to the system's most important job: reliability.
 
@@ -678,37 +850,56 @@ Essentially: We traded a "cool" motorized feature for a "critical" guarantee of 
 
 ---
 
+
+
 # 18. Reflection
 
+
+
 ## 18.1 Team Reflection
+
 
 The team worked really well together, syncing up during coding and wiring to build a system that actually works. We were at our best when things went sideways—quickly spotting bugs and making the tough call to pivot to a more reliable design when the original plan stalled.
 
 That said, the "hardware tax" hit us hard. We lost quite a bit of momentum troubleshooting finicky wiring, stubborn servos, and jumpy sensor data, which required way more trial and error than we expected. While we shared the load fairly, we definitely underestimated how much time hardware debugging eats up. Luckily, we adapted by stripping the project down to its core essentials, which is the only reason we crossed the finish line with a working prototype on time.  
 
 
+
+
+
 ## 18.2 Technical Reflection
+
 
 This project was a crash course in bridging the gap between theory and reality. On the electronics side, we moved past the basics to learn how sensors, RFID modules, and buzzers actually behave when wired together—specifically the "fun" of managing grounding and stable signals. On the software front, we leveled up from simple loops to non-blocking code with millis(), allowing us to juggle multiple real-time interactions without the system freezing up.
 
 The mechanical side was a reality check; working with servos taught us that alignment and precision are much harder to achieve in practice than on paper. We also got our hands dirty with fabrication, figuring out how to actually layout and assemble a device that someone could easily use. Ultimately, the biggest takeaway was the art of integration—troubleshooting that final 10% where hardware and software meet to turn a mess of wires into a cohesive, functional prototype.
 
 
+
+
 ## 18.3 Design Reflection
+
 
 We learned that great design isn't just about making things work; it’s about making them make sense. We focused on clarity, using LEDs as simple visual cues so there’s never a doubt about which pill is which. We found that "delight" actually comes from simplicity—creating a "scan, see, confirm" flow that feels satisfying rather than confusing.
 
 The physical build taught us that placement is everything; we had to put the RFID, LEDs, and sensors exactly where they felt most natural to reach. This was especially true when considering elderly users, where every bit of reduced complexity makes a massive difference. Ultimately, it took a lot of trial and error to get there, but each iteration helped us strip away the friction to build something that isn't just functional, but genuinely user-friendly.
 
 
+
+
+
 ## 18.4 If You Had One More hour
+
 
 With just one more hour, we would have dived back into the servo motor integration to make automatic dispensing a reality. The main goal would be syncing the motor’s movement perfectly with the system logic, ensuring each trigger results in a precise delivery. We’d spend that time calibrating the exact angles for smooth, consistent rotation and carefully aligning the mechanism with the compartments to finally solve the jamming issues. A quick round of stress-testing after RFID confirmation would have been the final touch, bringing the prototype one big step closer to being a truly "hands-free" automated dispenser.
    
 
 ---
 
+
+
 # 19. Final Submission Checklist
+
 
 Before submission, confirm that:
 
