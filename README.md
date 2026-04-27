@@ -458,7 +458,19 @@ Suggested sequence:
 
 
 
+## 10.4 Future App / Web Integration (Planned)
 
+The system can be extended using an ESP8266/ESP32 module to send real-time medication logs to a web dashboard.
+
+Possible features:
+- Caregiver monitoring dashboard
+- Missed dose alerts via WhatsApp/Telegram
+- Daily medication logs
+- Remote scheduling
+
+Currently not implemented due to time constraints, but architecture supports it.
+
+---
 
 # 11. Bill of Materials
 
