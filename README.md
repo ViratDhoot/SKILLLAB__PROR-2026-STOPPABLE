@@ -292,11 +292,16 @@ Insert a hand-drawn or software-made circuit diagram.
 
 ## 10.1 Software Tools
 
-| Tool / Platform                | Purpose                                        |
-| ------------------------------ | ---------------------------------------------- |
-|  [Aurdino ID]                  |  Code into Raspberry Pi Pico                   |
-|  [Python/PyGame/OpenCV]        |  Track markers, game logic, create projection  |
-|  [Fusion/Blender/Illustrator]  |  [Prototyping structure]                       |
+
+| Tool / Platform                               | Purpose                                                                 |
+| --------------------------------------------- | ----------------------------------------------------------------------- |
+| Arduino IDE                                   | Writing and uploading code to Raspberry Pi Pico                         |
+| Raspberry Pi Pico (RP2040) Board Package      | Enables Arduino IDE to program the Pico microcontroller                 |
+| MFRC522 Library                               | Used for interfacing with the RFID module and reading UID data          |
+| SPI Library                                   | Handles communication between Pico and RFID module                      |
+| Serial Monitor (Arduino IDE)                  | Debugging and viewing system outputs like UID, patient, and slot data   |
+
+
 
 ## 10.2 Software Logic
 
@@ -435,17 +440,9 @@ If your cost is too high, what can be simplified, removed, substituted, or share
 
 ## 12.1 Team Working Agreement
 
-Write how your team will work together.
+We divided tasks according to our individual strengths in work performance. Anish operated in the hardware domain because he managed wiring tasks and solved technical issues while recording the complete demonstration. Saumitra managed the coding and WiFi installation tasks whereas Nitisha constructed the physical structure and led both the presentation and documentation work. Virat established the initial phase of our project by creating the first documentation framework and report templates.
 
-Include:
-
-- how tasks are divided,
-- how decisions are made,
-- how progress will be checked,
-- what happens if a task is delayed,
-- how documentation will be maintained.
-
-**Response:**  
+The team maintained collaborative work processes because all significant technical decisions required group input. The team maintained progress through short unplanned meetings and active testing sessions in which team members demonstrated their operational results. The team solved problems by redistributing tasks and providing support to complete the assignment. We maintained our notes by updating them throughout the project and then we worked together to create a unified final report which represented our work as one complete project.
 
 
 ## 12.2 Task Breakdown
@@ -516,12 +513,13 @@ Expected outcomes:
 
 ## 13.2  Update Log
 
-| Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
-| ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 2 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 3 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
-| Week 4 |  [Write here]  |  [Write here]          |  [Write here]  |  [Write here]  |
+
+| Hour       | Planned Goal                                        | What Actually Happened                                                         | What Changed                                                                   | Next Steps                                   |
+| ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------- |
+| Hour 2     | Finalize idea, decide components, basic wiring plan | Project idea finalized, RFID and LED testing started                           | Simplified design by focusing on core functionality instead of full automation | Complete basic circuit and test RFID reading |
+| Hour 4     | Build circuit with sensors and RFID, start coding   | RFID working, LEDs responding, initial touch sensor issues faced               | Added debounce logic and improved wiring for stable sensor readings            | Integrate touch confirmation with LED logic  |
+| Hour 5     | Implement full system logic and testing             | Time-slot logic and buzzer system implemented, faced issues with blocking code | Switched to non-blocking `millis()` based logic for better stability           | Final integration and system testing         |
+| Hour 7     | Final testing, debugging, documentation             | System working reliably, buzzer and LED logic stable, documentation completed  | Removed complex features like motors and WiFi to ensure system reliability     | Prepare final demo and presentation          |
 
 ---
 
@@ -529,16 +527,22 @@ Expected outcomes:
 
 ## 14.1 Risk Register
 
-| Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
-| --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       |  Technical   |  Medium    |  High    | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop |  [Gopal]            |
 
+| Risk                                               | Type        | Likelihood | Impact | Mitigation Plan                                                          | Owner |
+| -------------------------------------------------- | ----------- | ---------- | ------ | ------------------------------------------------------------------------ | ----- |
+| Incorrect RFID reading or failure to detect card   | Technical   | Medium     | High   | Ensure proper wiring, maintain optimal scan distance, use stable power   | Team  |
+| Touch sensors giving unstable or false readings    | Technical   | Medium     | Medium | Use INPUT_PULLDOWN, proper grounding, and debounce logic                 | Team  |
+| Loose wiring or poor connections                   | Technical   | High       | High   | Secure connections, use quality jumper wires, and check continuity       | Team  |
+| Power fluctuations affecting components            | Technical   | Medium     | Medium | Use stable power source and maintain common ground across components     | Team  |
+| LED or buzzer failure                              | Hardware    | Low        | Medium | Pre-test components and keep spare parts ready                           | Team  |
+| Logic errors causing incorrect medicine indication | Software    | Medium     | High   | Debug using Serial Monitor and test all edge cases                       | Team  |
+| User confusion in interaction                      | Usability   | Low        | Medium | Design clear LED indicators and keep interaction simple and intuitive    | Team  |
 
 ## 14.2 Biggest Unknown Right Now
 
 What is the single biggest uncertainty in your project at this stage?
 
-**Response:**  
+The biggest question mark left is whether the servo motor can actually behave itself. While the identification and alert logic are solid, moving from "telling" to "dispensing" introduces a lot of mechanical chaos—things like perfect alignment, consistent rotation, and the constant threat of a pill jamming the gears. The real challenge for the next stage is making sure that adding these moving parts doesn't break the reliability we worked so hard to build. 
 
 
 ---
@@ -547,15 +551,30 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 15.1 Technical Testing Plan
 
-| What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-|  [Wifi connection]     |  [Check if motor spins via app button]                                               |  [Both motors accurately respond to wifi signals]                                                    |
-                       |
+
+| What Needs Testing       | How You Will Test It                          | Success Condition                                              |
+| ------------------------ | --------------------------------------------- | -------------------------------------------------------------- |
+| RFID card detection      | Scan multiple RFID cards repeatedly           | Correct user is identified accurately every time               |
+| LED indication logic     | Trigger different time slots and scan RFID    | Correct LEDs activate based on user and time slot              |
+| Touch sensor response    | Press each touch sensor during active session | Corresponding LED turns OFF reliably upon confirmation         |
+| Double dosage prevention | Scan same RFID twice in the same slot         | System blocks access and warning LED turns ON                  |
+| Buzzer alert system      | Do not scan RFID for a set time (e.g., 2 min) | Buzzer activates as a reminder                                |
+| Buzzer reset             | Scan RFID and complete medicine intake        | Buzzer turns OFF immediately after confirmation                |
+| Serial output            | Monitor Serial during operation               | Correct user ID and time slot data displayed consistently      |
+| Overall system flow      | Perform full cycle (scan → take → confirm)    | System operates smoothly without errors or unexpected behavior |
+
+
 ## 15.2 Testing and Debugging Log
 
-| Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
-| ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-|  18th April   |  Car not balancing properly           |  Mechanical  |  Add low-friction caster support to one side  |  Worked              |  improve caster structure                      |
+| Date       | Problem Found                       | Type           | What You Tried                                         | Result | Next Action                     |
+| ---------- | ----------------------------------- | -------------- | ------------------------------------------------------ | ------ | ------------------------------- |
+| 18th April | RFID not detecting cards properly   | Hardware       | Checked wiring, reduced distance, reinitialized module | Worked | Improve mounting stability      |
+| 19th April | Touch sensors giving false triggers | Hardware       | Used INPUT_PULLDOWN and added debounce logic           | Worked | Fine-tune sensitivity           |
+| 20th April | LEDs not turning OFF consistently   | Logic          | Fixed mapping between LED and touch sensors            | Worked | Test across all slots           |
+| 21st April | System freezing during operation    | Software       | Removed blocking loops and used millis()               | Worked | Optimize code structure         |
+| 22nd April | Buzzer triggering incorrectly       | Logic          | Switched from slot-based to time-based logic           | Worked | Improve independence of buzzers |
+| 23rd April | One buzzer not working properly     | Hardware/Logic | Separated buzzer timing logic                          | Worked | Final testing of alerts         |
+
 
 
 ## 15.3 Playtesting Notes
