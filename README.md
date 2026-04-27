@@ -150,13 +150,11 @@ Example: your medicine box project could dispense pills correctly—but if an ol
 
 ## 5.3 Stretch Features
 
-`- Automatic pill dispensing (motors, mechanisms)
+`1.Automatic pill dispensing (motors, mechanisms)
 Sounds impressive, but introduces mechanical failure points. A simple box works fine for the core function.`
-
-`- Mobile app instead of simple webpage
+`2. Mobile app instead of simple webpage
 A full app feels professional, but a basic web interface already solves the caregiver visibility problem.`
-
-`- Voice assistant integration (Alexa, Google Assistant)
+`3. Voice assistant integration (Alexa, Google Assistant)
 Cool demo feature, but doesn’t improve reliability or usability significantly.`
 
 ---
