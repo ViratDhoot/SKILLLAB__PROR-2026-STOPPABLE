@@ -63,10 +63,10 @@ Team STOPPABLE
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| Saumitra Bata |  [Hardware / Coding ]  |  [Documentation]   |  Documentation, Gift of Gab  |
-| Anish Deodhar |  [Hardware / Fabrication]    |  [Coding]      |  Material Handling, Gift of Gab     |
-|  Virat Dhoot  |  [Documentation/ Hardware  ]  |  [Coding]   |  Documentation, Material Handling  |
-|  Nitisha Dung   |  [Fabrication/Harware]    |  [Coding]      |  Material Handling, Hardware     |
+| Saumitra Bata |  Hardware / Coding   |  [Documentation]   |  Documentation, Gift of Gab  |
+| Anish Deodhar |  Hardware / Fabrication]    |  [Coding]      |  Material Handling, Gift of Gab     |
+|  Virat Dhoot  |  Documentation/ Hardware  ]  |  [Coding]   |  Documentation, Material Handling  |
+|  Nitisha Dung   |  Fabrication/Harware]    |  [Coding]      |  Material Handling, Hardware     |
 
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
