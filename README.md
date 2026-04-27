@@ -286,10 +286,9 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform                | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
-| `[MicroPython]`                | `Control ESP32`                                |
+| `[Aurdino ID]`                 | `Code into Raspberry Pi Pico`                  |
 | `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
 | `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
-|                                |                                                |
 
 ## 10.2 Software Logic
 
@@ -420,12 +419,12 @@ Include:
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
-| Concept              | `[Gopal]`  | `[Kader]`    |
-| Electronics          | `[]`       | `[]`     |
-| Coding               | `[]`       | `[]`     |
-| Mechanical build     | `[]`       | `[]`    |
-| Testing              | `[]`       | `[]`    |
-| Documentation        | `[]`       | `[]`     |
+| Concept              | `[Gopal]`  | `[Kader]`     |
+| Electronics          | `[]`       | `[]`          |
+| Coding               | `[]`       | `[]`          |
+| Mechanical build     | `[]`       | `[]`          |
+| Testing              | `[]`       | `[]`          |
+| Documentation        | `[]`       | `[]`          |
 
 ---
 
