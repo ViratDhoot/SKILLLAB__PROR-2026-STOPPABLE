@@ -68,13 +68,13 @@ Team STOPPABLE
 | `Virat Dhoot` | `[Documentation/ Hardware  ]` | `[Coding]`  | `Documentation, Material Handling `|
 | `Nitisha Dung`  | `[Fabrication/Harware]`   | `[Coding]`     | `Material Handling, Hardware`    |
 
-<img width="830" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
+<img width="815" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Team%20Photograph.jpeg" />
 
 ## 1.3 Project Title
 
 `"Sync-Box"`
 
-<img width="830" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
+<img width="815" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
 
 ## 1.4 One-Line Pitch
 
