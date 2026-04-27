@@ -115,9 +115,9 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
-|             |                                                                     |                                                                                           |
-|             |                                                                     |                                                                                           |
+| `[Scientific Report]` | `https://www.ncbi.nlm.nih.gov/books/NBK225187/` | `Medication errors are a major cause of preventable deaths in healthcare systems.` |
+| `[Encyclopedia article]` | `https://en.wikipedia.org/wiki/Overmedication` | `Managing multiple medicines and dosage is one of the biggest challenges in elderly care.`  |
+|             |                                                                     |                                                                      |
 
 ## 3.2 Original Twist
 
@@ -129,7 +129,7 @@ List what inspired the project.
 
 ## 4.1 User Journey 
 
-`It’s 8:00 AM in an old-age home, and the **Sync Box** gently lights up with a voice prompt: *“Morning medicines are ready.”* Residents walk up one by one on their own. Mr. Sharma taps his RFID card, the system recognizes him instantly, and only his assigned compartment opens to dispense his specific pills. He takes the medicine and taps the confirm sensor, and the system logs his dose as “taken.” A few minutes later, another resident comes, taps their card, and receives a completely different set of medicines—all from the same shared device, without confusion or assistance.`
+`It’s 8:00 AM in an old-age home, and the **Sync Box** gently lights up and indicates it's medication time. Residents walk up one by one on their own. Mr. Sharma taps his RFID card, the system recognizes him instantly, and only his assigned compartment opens to dispense his specific pills. He takes the medicine and taps the confirm sensor, and the system logs his dose as “taken.” A few minutes later, another resident comes, taps their card, and receives a completely different set of medicines—all from the same shared device, without confusion or assistance.`
 
 `Meanwhile, the caregiver doesn’t need to be physically present. On a local web dashboard, they can see live updates: who has taken their medicine, who is late, and who hasn’t shown up yet. When one resident misses their dose, the system marks it and updates the dashboard in real time. The caregiver can quickly identify the issue remotely and decide whether to intervene. By the end of the day, the Sync Box provides a complete adherence report, making medication management efficient, independent for residents, and easy to monitor for caregivers.`
 
@@ -144,11 +144,7 @@ List what inspired the project.
 `A device can be functional but still not usable.
 Example: your medicine box project could dispense pills correctly—but if an old person can’t understand the interface, it’s useless in practice.`
 
-## 5.2 Minimum Usable Version
-
-What is the smallest version of this project that still delivers the core experience?
-
-**Response:**  
+## 5.2 Minimum Usable Version 
 
 `The smallest version of this project that still delivers the core experience is a simple, single-user medicine reminder system that ensures the patient takes their medication on time and allows a caregiver to know whether it was taken. This can be achieved using a microcontroller Raspberry Pico Pi 2, a buzzer or LED for alerts, and a single push button for user confirmation. At the scheduled time, the device gives an audible or visual alert prompting the user to take the medicine from a basic compartment. Once the medicine is taken, the user presses the button to confirm, and this status is sent over Wi-Fi to a simple webpage or dashboard for the caregiver to monitor remotely. This minimal setup removes complex features like RFID, multiple users, or automated dispensing, yet still fulfills the essential goal of timely medication intake and remote awareness, which defines the core value of the system.`
 
