@@ -598,8 +598,8 @@ The team maintained collaborative work processes because all significant technic
 | Concept              |  Anish     |  Nitisha      |
 | Electronics          |  Anish     |  Saumitra     |
 | Coding               |  Saumitra  |  Anish        |
+| Mechanical build     |   Nitisha    |  Anish      |
 | Documentation        |  Saumitra  |  Nitisha      |
-| Mechanical build     |   Anish    |  Nitisha      |
 | Testing              |  Nitisha   |  Saumitra     |
 | PowerPoint Presentation (PPT) |  Virat |
  
