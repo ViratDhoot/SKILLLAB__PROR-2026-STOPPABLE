@@ -299,10 +299,6 @@ Insert a hand-drawn or software-made circuit diagram.
 <img width="813" height="700" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/ckt%20diagram.jpeg " />
 
 
-**Insert image below:**  
-<img width="867" height="1156" alt="" src="" />
-
-
 # 9. Power Plan
 
 | Question         | Response                                                                                                                                          |
