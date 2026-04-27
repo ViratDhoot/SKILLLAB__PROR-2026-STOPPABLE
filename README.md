@@ -72,7 +72,8 @@ Team STOPPABLE
 
 ## 1.3 Project Title
 
- "Sync-Box" 
+ ### Sync-Box 
+ 
 
 <img width="813" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
 
@@ -90,11 +91,12 @@ Team STOPPABLE
 
 ## 1.5 Expanded Project Idea
  
- A time-synced automated medicine box with unique RFID tags ensures each person receives the correct medication at the right time. The system alerts the user when a dose is due, verifies their identity using an RFID tag, and then dispenses the medicine, reducing errors like missed or incorrect doses.
+A time-synced automated medicine box with unique RFID tags ensures each person receives the correct medication at the right time. The system alerts the user when a dose is due, verifies their identity using an RFID tag, and then dispenses the medicine, reducing errors like missed or incorrect doses.
 It combines technologies like an Raspberry Pi Pico 2, RFID module, motors for dispensing, and sensors for verification.This creates a smart, reliable system that improves medication adherence and patient safety.
  
 
 ---
+
 
 # 2. Philosophy Fit
 
@@ -127,13 +129,17 @@ List what inspired the project.
 |  [Encyclopedia article]  |  https://en.wikipedia.org/wiki/Overmedication  |  Managing multiple medicines and dosage is one of the biggest challenges in elderly care.   |
 |             |                                                                     |                                                                      |
 
+
+
 ## 3.2 Original Twist
 
 The system operates as a personalized medication guidance system which uses RFID technology. The system uses RFID cards to verify which person should receive which medications at the correct schedule instead of dispensing pills automatically. The system uses touch sensors to verify drug intake while specific LEDs display which medications should be taken according to the current time. The system offers personalized solutions through its user-friendly design which includes double-dose prevention and separate alert systems for missed doses.
 
+
 ---
 
 # 4. Project Intent
+
 
 ## 4.1 User Journey 
 
@@ -144,7 +150,10 @@ Another resident scans their card after a few minutes which leads to different L
 
 ---
 
+
 # 5. Definition of Success
+
+
 
 ## 5.1 Definition of “Usable”
 
@@ -153,9 +162,12 @@ Another resident scans their card after a few minutes which leads to different L
  A device can be functional but still not usable.
 Example: your medicine box project could dispense pills correctly—but if an old person can’t understand the interface, it’s useless in practice. 
 
+
+
 ## 5.2 Minimum Usable Version 
 
 The smallest version of this project that still delivers the core experience is a simple, single-user medication guidance system that ensures the patient takes their medicine on time. The system can be built with a Raspberry Pi Pico and two LEDs for status display and one touch sensor for user verification. The system uses an LED light to notify users about their scheduled medication time. After the user takes their medicine, they press the touch sensor to confirm their action, which causes the system to record the event and reset for the upcoming cycle. This basic configuration maintains essential functions for confirming medication intake at scheduled times, but it eliminates features such as RFID and multiple user access and alert systems.
+
 
 
 ## 5.3 Stretch Features
@@ -169,7 +181,11 @@ Cool demo feature, but doesn’t improve reliability or usability significantly.
 
 ---
 
+
+
 # 6. System Overview
+
+
 
 ## 6.1 Project Type
 
@@ -181,9 +197,9 @@ Check all that apply.
 
 - [x] Sensor-based
 
-- [x] App-connected
+- [ ] App-connected
 
-- [x] Motorized
+- [ ] Motorized
 
 - [ ] Sound-based
 
@@ -253,11 +269,11 @@ Check all that apply.
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-|  [Raspberry Pi Pico 2]    |  1       |  [Main controller]                    |
-|  [Touch Sensor]           |  5       |  [Verification]                       |
-|  [RFID (RC522)]            |  1       |  [Individual Detection]              |
-|  [LED]                    |  8       |  [Indication]                         |
-|  [Buzzer]                 |  2       |  [Alert]                              |
+|  Raspberry Pi Pico 2    |  1       |  Main controller                    |
+|  Touch Sensor           |  5       |  Verification                       |
+|  RFID (RC522)            |  1       |  Individual Detection             |
+|  LED                    |  8       |  Indication                         |
+|  Buzzer                 |  2       |  Alert                              |
 
 
 ## 8.2 Wiring Plan
@@ -275,7 +291,6 @@ All components — the RFID module, LEDs, and touch sensors — share a **common
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
- [Upload image and link here] 
 <img width="867" height="1156" alt="" src="" />
 
 
