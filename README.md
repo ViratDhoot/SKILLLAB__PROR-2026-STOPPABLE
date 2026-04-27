@@ -280,13 +280,18 @@ Check all that apply.
 
 Describe the main electrical connections.
 
-**Response:**  
- The **RP2040 Pico** is the central controller. It communicates with the **RC522 RFID module** over the SPI bus using five wires: GPIO 17 (CS), GPIO 20 (RST), plus the shared MOSI, MISO, and SCK lines. The CS pin selects the RC522 on the SPI bus, and the RST pin allows hardware reset of the module.
-The **five medicine LEDs** are each connected directly from their respective GPIO output pins (10, 11, 14, 15, 21) to GND, with no resistors in the circuit. The **sixth alert LED** (also green) follows the same direct connection on GPIO 22 — it lights up as a warning when a patient attempts to scan their card after already completing that time slot's dose.
-The **five capacitive touch sensors** are each wired with one terminal to a dedicated GPIO input pin (26, 27, 28, 6, 7) and the other terminal to GND. When the patient's finger touches the sensor pad, the pin reads HIGH; when untouched, it reads LOW.
-All components — the RFID module, LEDs, and touch sensors — share a **common GND rail** connected to the Pico's GND pin to ensure a stable voltage reference across the entire circuit. The system is powered via the Pico's **Micro-USB port** at 5V, which the onboard regulator steps down to 3.3V to supply the RC522 module and all logic-level signals. 
+The Raspberry Pi Pico (RP2040) serves as the main control unit for the entire system. The RC522 RFID module communicates with the system through SPI protocol because GPIO 17 works as the Chip Select (CS) line and GPIO 20 operates as the Reset (RST) line while using shared SPI lines (MOSI, MISO, and SCK). The system uses these connections to obtain RFID card information which identifies patients.
+
+The five medicine LEDs use GPIO pins (10, 11, 14, 15, 21) as their connection points, which connect to GND through current-limiting resistors that protect the circuit from excessive current. The system uses an extra LED on GPIO 22 as a warning light which activates when someone tries to enter the system multiple times within the same time period.
+
+Five capacitive touch sensors connect to GPIO pins (26, 27, 28, 6, 7). User interaction detection occurs through these sensors, which produce a HIGH signal on the corresponding pin when someone touches the sensor to show that they have taken their medication.
+
+The Pico’s GND serves as the common ground for all components, which creates a stable reference point. The Pico Micro-USB port powers the system because it provides 5V power, which the system regulates to 3.3V for safe operation of all components including the RFID module.
+
+
 
 ## 8.3 Circuit Diagram
+
 
 Insert a hand-drawn or software-made circuit diagram.
 
