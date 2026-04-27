@@ -478,13 +478,14 @@ The team maintained collaborative work processes because all significant technic
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
-| Concept              |  [Gopal]   |  [Kader]      |
-| Electronics          |  []        |  []           |
-| Coding               |  []        |  []           |
-| Mechanical build     |  []        |  []           |
-| Testing              |  []        |  []           |
-| Documentation        |  []        |  []           |
-
+| Concept              |  Anish     |  Nitisha      |
+| Electronics          |  Anish     |  Saumitra     |
+| Coding               |  Saumitra  |  Anish        |
+| Documentation        |  Saumitra  |  Nitisha      |
+| Mechanical build     |   Anish    |  Nitisha      |
+| Testing              |  Nitisha   |  Saumitra     |
+| PowerPoint Presentation (PPT) |  Virat |
+ 
 ---
 
 # 13. 2 hour Milestones
