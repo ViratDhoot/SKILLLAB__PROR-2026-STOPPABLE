@@ -129,7 +129,7 @@ List what inspired the project.
 
 ## 3.2 Original Twist
 
- It is a RFID-based personalized dispensing. Instead of just releasing pills at a fixed time, this system ensures the right person is taking the right medicine, which solves a real-world problem in multi-user environments. On top of that, features like dose verification (via sensors), alerts system turn it from a basic dispenser into a connected healthcare assistant that works according to individual needs. 
+The system operates as a personalized medication guidance system which uses RFID technology. The system uses RFID cards to verify which person should receive which medications at the correct schedule instead of dispensing pills automatically. The system uses touch sensors to verify drug intake while specific LEDs display which medications should be taken according to the current time. The system offers personalized solutions through its user-friendly design which includes double-dose prevention and separate alert systems for missed doses.
 
 ---
 
@@ -137,9 +137,10 @@ List what inspired the project.
 
 ## 4.1 User Journey 
 
- It’s 8:00 AM in an old-age home, and the **Sync Box** gently lights up and indicates it's medication time. Residents walk up one by one on their own. Mr. Sharma taps his RFID card, the system recognizes him instantly, and only his assigned compartment opens to dispense his specific pills. He takes the medicine and taps the confirm sensor, and the system logs his dose as “taken.” A few minutes later, another resident comes, taps their card, and receives a completely different set of medicines—all from the same shared device, without confusion or assistance. 
+The Sync Box shows visual cues for medication time at 8:00 AM. The residents use their RFID cards to approach the device. The system identifies Mr. Sharma when he taps his card which triggers specific LEDs that show his required medicines. He follows the LED indications to take his medicines while using touch sensors to confirm each one. The system registers the dose complete after the user provides all required inputs.
 
- Meanwhile, the caregiver doesn’t need to be physically present. On a local web dashboard, they can see live updates: who has taken their medicine, who is late, and who hasn’t shown up yet. When one resident misses their dose, the system marks it and updates the dashboard in real time. The caregiver can quickly identify the issue remotely and decide whether to intervene. By the end of the day, the Sync Box provides a complete adherence report, making medication management efficient, independent for residents, and easy to monitor for caregivers. 
+Another resident scans their card after a few minutes which leads to different LED indications that match their scheduled times. The system prevents users from taking their medication at the same time while creating a system that makes it clear who the current user is. A dedicated buzzer alert system activates when a resident fails to take their medicine within their scheduled time and continues until the dose is completed. The system creates a straightforward system that guides users to manage their medications independently without needing outside help or complicated systems.
+
 
 ---
 
