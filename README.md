@@ -46,7 +46,7 @@ By the final review, this README should clearly show:
 
 - Fill every section.
 - Do not delete headings.
-- If something does not apply, write `Not applicable` and explain why.
+- If something does not apply, write 'Not applicable' and explain why.
 - Add images, screenshots, sketches, links, and videos wherever useful.
 - Update task status and weekly logs regularly.
 - Use this file as evidence of process, not only as a final report.
@@ -72,7 +72,7 @@ Team STOPPABLE
 
 ## 1.3 Project Title
 
-`"Sync-Box"`
+### `"Sync-Box"`
 
 <img width="813" height="900" alt="image" src="https://github.com/ViratDhoot/SKILLLAB__PROR-2026-STOPPABLE/blob/main/images/Project%20Image.png" />
 
@@ -236,12 +236,19 @@ Check all that apply.
 
 ## 7.3 Approximate Dimensions
 
-| Dimension        | Value   |
+| Dimension(of each box)        | Value   |
 | ---------------- | ------- |
-| Length           | `16 cm` |
-| Width            | `16 cm` |
-| Height           | `8 cm`  |
-| Estimated weight | `400 g` |
+| Length           | `9 cm` |
+| Width            | `8 cm` |
+| Height           | `7 cm`  |
+| Estimated weight | ` around 300 g` |
+
+| Dimension (Complete prototype)        | Value   |
+| ---------------- | ------- |
+| Length           | `30 cm` |
+| Width            | `25 cm` |
+| Height           | `10 cm`  |
+| Estimated weight | ` around 300 g` |
 
 ---
 
