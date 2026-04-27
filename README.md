@@ -305,22 +305,20 @@ Include:
 - reset behavior.
 
 **Response:**  
-`
-
-- **Startup behavior:**  
-  The ESP32 initializes motor pins, PWM control, and starts a WiFi access point with a web server. The laptop initializes camera input, tracking system, and projection mapping.
-- **Input handling:**  
-  Movement commands are received from the laptop (pygame sends http requests)
-- **Sensor reading:**  
-  The camera continuously captures frames, and OpenCV detects ArUco markers to determine the car’s position and orientation.
-- **Decision logic:**  
-  The system maps the car’s position into a virtual coordinate system and checks for nearby obstacles or collisions. If movement is valid, the command is allowed; if not, it is blocked or replaced with a feedback action (like a slight shake).
-- **Output behavior:**  
-  The ESP32 drives the motors using PWM signals to control speed and direction. The projector displays the updated game environment, including obstacles, targets, and feedback visuals.
-- **Communication logic:**  
-  The laptop sends HTTP requests (e.g., `/forward`, `/left`) to the ESP32 over WiFi. The ESP32 parses these commands and executes motor actions.
-- **Reset behavior:**  
-  If no command is received within a short timeout, the ESP32 stops the motors. The game resets when a level is completed or restarted.`
+Startup behavior:
+The system initializes LEDs, touch sensors, buzzers, and the RFID reader using the MFRC522 RFID Module. All outputs are turned OFF, timers are set, and the system becomes ready for operation.
+Input handling:
+It reads RFID cards to identify patients and ignores repeated scans using a cooldown. Invalid cards are rejected.
+Sensor reading:
+Touch sensors detect medicine confirmation, and internal timing (millis) determines the current time slot.
+Decision logic:
+The system checks patient ID and slot, prevents duplicate intake, and selects required medicines. It waits until all required touches are completed.
+Output behavior:
+LEDs indicate medicines, a red LED shows errors, and buzzers alert if a dose is missed.
+Communication logic:
+Serial output sends data like patient and slot, which can be extended using an ESP32 for web monitoring.
+Reset behavior:
+LEDs and alerts reset automatically after use, and the system continuously runs for the next cycle.
 
 ## 10.3 Code Flowchart
 
@@ -350,7 +348,7 @@ Suggested sequence:
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| `[ESP32]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
+| `[Raspberry Pi Pico]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
 | `[Motor Driver]`                 | `[1]`    | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
 | `[DC Motors and wheel]`          | `[2]`    | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
 | `[Buck Converter]`               | `[1]`    | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
