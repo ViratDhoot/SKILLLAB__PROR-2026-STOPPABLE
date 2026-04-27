@@ -571,35 +571,17 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 16.1 Fabrication Process
 
-Describe how the project was physically made.
+The fabrication process of the smart medication management system included designing, assembling, wiring, and refining both the hardware structure and electronic components. 
 
-Include:
+The initial design was based on the sizes of the components like the Raspberry Pi Pico, RFID module, LEDs, touch sensors, and buzzers. This ensured proper placement and accessibility. The base structure was created using a simple enclosure or mounting board, where slots and positions for each component were marked and adjusted by hand.
 
-- cutting,
-- 3D printing,
-- assembly,
-- fastening,
-- wiring,
-- finishing,
-- revisions.
+Basic cutting and shaping were done to make openings for the LEDs, RFID scanner, and touch sensors. The components were then attached to the structure with adhesives and basic fastening methods. Some parts remained modular for easy debugging and replacement.
 
-**Response:**  
- The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system. 
+Wiring connected all components to the microcontroller. This ensured proper power distribution, common grounding, and stable signal connections. Care was taken to organize the wires to prevent loose connections and interference.
 
- Design (CAD Modeling):
-The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
-Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components. 
+Minor finishing steps involved securing loose components, properly aligning sensors, and making sure the LEDs were clearly visible for user interaction. Throughout the process, multiple revisions were made to resolve issues like incorrect connections, unstable sensor readings, and component placement. This resulted in a stable and functional prototype.
 
- Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
-Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability. 
-
- Environment Setup (Dark Room Fabrication):
-To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
-Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment. 
-
+ 
 ## 16.2 Build Photos
 
 - early sketch,
@@ -617,23 +599,36 @@ Multiple adjustments were made throughout the process, including refining alignm
 
 ## 17.1 Final Description
 
-Describe the final version of your project.
-
-**Response:**  
+The final version of the project is a fully functional smart medication management system designed to ensure accurate and timely medicine intake for multiple users. The system uses RFID cards to uniquely identify patients and, based on predefined time slots, activates specific LEDs to indicate the medicines to be taken. Touch sensors allow users to confirm intake, after which the system records completion and turns off the corresponding indicators. It includes a safety mechanism that prevents repeated access within the same time slot to avoid double dosage. Additionally, each patient has an independent buzzer alert that activates if a dose is missed and continues until the medication is taken. The system is built on a Raspberry Pi Pico with a clean, non-blocking logic architecture, ensuring stable and continuous operation.
 
 
 ## 17.2 What Works Well
 
+The system's main parts and functions are all working as they should. The RFID-based identification system correctly tells different patients apart. The LED lights clearly show which medicines need to be taken, and the time-based logic correctly sets up the medication schedules. The touch sensors always work, which makes it easy to confirm that the medicine was taken. The system works well to stop people from taking the same dose twice in the same time slot. The independent buzzer alert system also works for each patient, only sending reminders when a dose is missed. The hardware and software work well together overall, and the system runs smoothly without any problems or delays.
 
 
 ## 17.3 What Still Needs Improvement
 
+The integration of the servo motor for automatic medicine dispensing still needs work. The core system for identification, indication, and confirmation is working fine, but the servo mechanism isn't fully in sync with the system logic yet. There needs to be more work on issues like precise control, consistent movement, and making sure that the medicine slots are lined up correctly. Also, the mechanical design for dispensing needs to be better calibrated to make sure it works reliably without getting stuck or lost. More work needs to be done to make sure that the servo works perfectly with the current system so that automatic dispensing is smooth and reliable.
+
 
 ## 17.4 What Changed From the Original Plan
 
-How did the project change from the initial idea?
+Our original vision for the Smart Medicine Dispenser was ambitious: a fully automated system featuring servo-driven dispensing, real-time cloud alerts via the Pico W, and a dedicated LCD interface. However, as development progressed, we encountered the classic "mechanical hurdle." Precise pill alignment, servo synchronization, and the constant risk of jamming posed a threat to the system's most important job: reliability.
 
-**Response:**  
+Reimagining the Approach
+To ensure a rock-solid prototype, we strategically shifted our focus. We moved away from the mechanical risks of automatic dispensing and instead developed a Guided Medication System. By swapping servos for high-visibility LEDs and touch sensors, we transformed the device into an intuitive assistant:
+
+Visual Guidance: LEDs clearly indicate exactly which medication needs to be taken.
+
+Tactile Confirmation: Capacitive touch sensors allow the user to confirm they’ve taken their dose, closing the feedback loop without the risk of a mechanical failure.
+
+Streamlined Logic: We replaced the external RTC and IoT dependencies with a robust software-based timer. This eliminated "network anxiety" and simplified the hardware footprint, ensuring the device works every time, regardless of Wi-Fi stability.
+
+The Result
+This pivot allowed us to master the core fundamentals: accurate identification, clear indication, and persistent missed-dose alerts. What we have now isn't just a simplified version of the original plan; it’s a stable, fully functional foundation. By removing the "moving parts" that often lead to failure in early-stage prototypes, we’ve created a more dependable device that is easier to demonstrate and perfectly positioned for future upgrades like remote monitoring or mechanical automation.
+
+Essentially: We traded a "cool" motorized feature for a "critical" guarantee of performance. It’s better to have a system that reliably tells you what to take than an automated one that accidentally crushes a pill or loses its Wi-Fi connection.
 
 
 ---
@@ -642,46 +637,28 @@ How did the project change from the initial idea?
 
 ## 18.1 Team Reflection
 
-What did your team do well?  
-What slowed you down?  
-How well did you manage time, tasks, and responsibilities?
+The team worked really well together, syncing up during coding and wiring to build a system that actually works. We were at our best when things went sideways—quickly spotting bugs and making the tough call to pivot to a more reliable design when the original plan stalled.
 
-**Response:**  
+That said, the "hardware tax" hit us hard. We lost quite a bit of momentum troubleshooting finicky wiring, stubborn servos, and jumpy sensor data, which required way more trial and error than we expected. While we shared the load fairly, we definitely underestimated how much time hardware debugging eats up. Luckily, we adapted by stripping the project down to its core essentials, which is the only reason we crossed the finish line with a working prototype on time.  
 
 
 ## 18.2 Technical Reflection
 
-What did you learn about:
+This project was a crash course in bridging the gap between theory and reality. On the electronics side, we moved past the basics to learn how sensors, RFID modules, and buzzers actually behave when wired together—specifically the "fun" of managing grounding and stable signals. On the software front, we leveled up from simple loops to non-blocking code with millis(), allowing us to juggle multiple real-time interactions without the system freezing up.
 
-- electronics,
-- coding,
-- mechanisms,
-- fabrication,
-- integration?
-
-**Response:**  
+The mechanical side was a reality check; working with servos taught us that alignment and precision are much harder to achieve in practice than on paper. We also got our hands dirty with fabrication, figuring out how to actually layout and assemble a device that someone could easily use. Ultimately, the biggest takeaway was the art of integration—troubleshooting that final 10% where hardware and software meet to turn a mess of wires into a cohesive, functional prototype.
 
 
 ## 18.3 Design Reflection
 
-What did you learn about:
+We learned that great design isn't just about making things work; it’s about making them make sense. We focused on clarity, using LEDs as simple visual cues so there’s never a doubt about which pill is which. We found that "delight" actually comes from simplicity—creating a "scan, see, confirm" flow that feels satisfying rather than confusing.
 
-- designing ,
-- delight,
-- clarity,
-- physical interaction,
-- understanding,
-- iteration?
-
-**Response:**  
+The physical build taught us that placement is everything; we had to put the RFID, LEDs, and sensors exactly where they felt most natural to reach. This was especially true when considering elderly users, where every bit of reduced complexity makes a massive difference. Ultimately, it took a lot of trial and error to get there, but each iteration helped us strip away the friction to build something that isn't just functional, but genuinely user-friendly.
 
 
 ## 18.4 If You Had One More hour
 
-What would you improve next?
-
-**Response:**  
-
+With just one more hour, we would have dived back into the servo motor integration to make automatic dispensing a reality. The main goal would be syncing the motor’s movement perfectly with the system logic, ensuring each trigger results in a precise delivery. We’d spend that time calibrating the exact angles for smooth, consistent rotation and carefully aligning the mechanism with the compartments to finally solve the jamming issues. A quick round of stress-testing after RFID confirmation would have been the final touch, bringing the prototype one big step closer to being a truly "hands-free" automated dispenser.
    
 
 ---
